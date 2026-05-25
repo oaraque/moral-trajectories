@@ -1,0 +1,9 @@
+transformers
+huggingface_hub
+accelerate
+variationist
+bitsandbytes
+seaborn
+matplotlib
+nltk
+kaleido
