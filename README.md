@@ -9,17 +9,25 @@ This repository contains the code, data, configuration files, and examples used 
 ## Folder guide
 
 ### `src/`
-Contains the implementation used in the paper.
+Contains the code used in the paper.
 
-### `charts`
+- `entropy_evaluation.py`: Entropy-based analyses of model responses across moral prompting conditions.
+- `JSD_analysis.py`: Jensen-Shannon Divergence analyses comparing response distributions across models, topics, and prompting conditions.
+- `Generate-Heatmap-Distances.ipynb`: Notebook for generating heatmap visualizations of moral distances between prompting conditions.
+
+### `charts/`
 Contains the generated visualizations in the paper.
 
-- `entropy`: Entropy-based analyses.
+- `entropy/`: Entropy-based analyses, including per-topic/model HTML plots and high-z-score PDF figures.
+- `jsd/`: Jensen-Shannon Divergence results as CSV tables (overall, cross-model, and cross-topic breakdowns).
+- `nwpmi_bigrams/`: Normalized Weighted PMI bigram analysis bar chart.
 
 ### `examples`
 Contains examples of the generated benchmark, along with human annotations.
 
 ## MoralTrajectories: the resource
+
+The prompts and example questions used to generate the benchmark are defined in `config.yml`. The file contains the base prompt template (no moral framing), the moral prompt template (with injected belief statements), the full set of moral foundation belief statements for each of the six foundations, and a list of example questions drawn from the AllSides dataset.
 
 The benchmark is organized around a **topic**, a **question**, and multiple prompting conditions:
 

@@ -7,3 +7,7 @@ seaborn
 matplotlib
 nltk
 kaleido
+scipy
+numpy
+pandas
+plotly
